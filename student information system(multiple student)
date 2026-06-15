@@ -1,0 +1,29 @@
+students = []
+
+n = int (input("How many students do you want to add?"))
+for i in range(n):
+    print(f"\nEnter details of students{i+1}")
+
+    name =input("name:")
+    age = int(input("age:"))
+    roll_no = int(input("roll_no:"))
+    class_name = input("class:")
+    percentage = float(input("percentage:"))
+
+    student = {
+        "Name" : name,
+        "Age" : age,
+        "Roll no" : roll_no,
+        "class" : class_name,
+        "percentage" : percentage   
+        }
+    
+    students.append(student)
+
+for s in students:
+    print("\n------------------")
+    for key,value in s.items():
+        print(key, ":",value)
+
+    
+
